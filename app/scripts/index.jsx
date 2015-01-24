@@ -14,8 +14,8 @@ var feed2 = new Feed(10, 20);
 var data = [];
 
 var stats = {
-	distribution: ["Stat 1", "Stat 2", "Stat 3"],
-	archive: ["Stat 1", "Stat 2"]
+	distribution: ["volume", "users", "files"],
+	archive: ["volume", "files"]
 };
 
 for (var i = 0; i < types.length; i++) {
@@ -26,7 +26,7 @@ console.log(data);
 
 React.render(
 	<Tabs>
-		<Distribution tab="Distribution" data={data} statistics={stats.distribution} />
+		<Distribution tab="Distribution" />
 		<Archive tab="Archive" data={data} statistics={stats.archive} />
   </Tabs>,
   document.getElementById('react-container')
