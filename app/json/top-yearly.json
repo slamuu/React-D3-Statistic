@@ -1,0 +1,871 @@
+[
+	{
+		"statistic": "users",
+		"data": [
+			{
+				"year": "2012",
+				"data": [
+					{
+						"type": "FTP",
+						"data": [
+							{
+								"id": "PODAAC-GHGMR-4FJ01",
+								"volume": "14339.47",
+								"files": "238381",
+								"users": "2237",
+								"name": "GHRSST Level 4 MUR Global Foundation Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-ASOP2-12X01",
+								"volume": "2758.45",
+								"files": "2091303",
+								"users": "1270",
+								"name": "MetOp-A ASCAT Level 2 12.5km Ocean Surface Wind Vectors"
+							},
+
+							{
+								"id": "PODAAC-TEDOT-JPG08",
+								"volume": "0.21",
+								"files": "1766",
+								"users": "1259",
+								"name": "TELLUS DYNAMIC OCEAN TOPOGRAPHY 2008 JPEG"
+							},
+
+							{
+								"id": "PODAAC-GHOST-4FK01",
+								"volume": "594.45",
+								"files": "206796",
+								"users": "1205",
+								"name": "GHRSST Level 4 OSTIA Global Foundation Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-GOSTA-PHDF0",
+								"volume": "1.79",
+								"files": "24796",
+								"users": "1178",
+								"name": "Global Ocean Surface Temperature Atlas Plus (MIT, UKMO, JPL)"
+							},
+
+							{
+								"id": "PODAAC-QSBYU-ENR00",
+								"volume": "6931.36",
+								"files": "2224958",
+								"users": "1167",
+								"name": "SeaWinds on QuikSCAT Enhanced Resolution Regionally Gridded Sigma-0 (BYU, D. Long)"
+							},
+
+							{
+								"id": "PODAAC-GHMDA-2PJ01",
+								"volume": "26804.49",
+								"files": "11230207",
+								"users": "1163",
+								"name": "GHRSST Level 2P Global Skin Sea Surface Temperature from the Moderate Resolution Imaging Spectroradiometer (MODIS) on the NASA Aqua satellite"
+							},
+
+							{
+								"id": "PODAAC-J1GDR-BIN0C",
+								"volume": "1054.33",
+								"files": "958799",
+								"users": "1096",
+								"name": "Jason-1 level 2 Altimeter Geophysical Data Record version C binary format"
+							},
+
+							{
+								"id": "PODAAC-GHMDT-2PJ01",
+								"volume": "23461.13",
+								"files": "9427509",
+								"users": "1051",
+								"name": "GHRSST Level 2P Global Skin Sea Surface Temperature from the Moderate Resolution Imaging Spectroradiometer (MODIS) on the NASA Terra satellite"
+							},
+
+							{
+								"id": "PODAAC-PATHF-DYD50",
+								"volume": "1760.92",
+								"files": "625204",
+								"users": "1008",
+								"name": "AVHRR Pathfinder Level 3 Daily Daytime SST Version 5"
+							}
+						]
+					},
+
+					{
+						"type": "OPeNDAP",
+						"data": [
+							{
+								"id": "PODAAC-QSX25-L2B02",
+								"volume": "245.21",
+								"files": "207368",
+								"users": "121",
+								"name": "SeaWinds on QuikSCAT Level 2B Ocean Wind Vectors in 25 Km Swath Grid Version 2"
+							},
+
+							{
+								"id": "PODAAC-OSCAR-03D01",
+								"volume": "47.77",
+								"files": "4310190",
+								"users": "114",
+								"name": "OSCAR third degree resolution ocean surface currents"
+							},
+
+							{
+								"id": "PODAAC-ASOP2-12X01",
+								"volume": "7.61",
+								"files": "12291",
+								"users": "111",
+								"name": "MetOp-A ASCAT Level 2 12.5km Ocean Surface Wind Vectors"
+							},
+
+							{
+								"id": "PODAAC-GHGMR-4FJ01",
+								"volume": "128.74",
+								"files": "312534",
+								"users": "95",
+								"name": "GHRSST Level 4 MUR Global Foundation Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-CCF30-01XXX",
+								"volume": "106.08",
+								"files": "51519",
+								"users": "78",
+								"name": "Cross-Calibrated Multi-Platform Ocean Surface Wind Vector L3.0 First-Look Analyses"
+							},
+
+							{
+								"id": "PODAAC-GHK10-41N01",
+								"volume": "3.79",
+								"files": "28704",
+								"users": "76",
+								"name": "GHRSST Level 4 K10_SST Global 1 meter Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-QSXXX-L3002",
+								"volume": "25.27",
+								"files": "1161",
+								"users": "65",
+								"name": "SeaWinds on QuikSCAT Level 3 Daily Gridded Ocean Wind Vectors (JPL Version 2)"
+							},
+
+							{
+								"id": "PODAAC-CCF35-01AM1",
+								"volume": "7.07",
+								"files": "44798",
+								"users": "63",
+								"name": "Cross-Calibrated Multi-Platform Ocean Surface Wind Vector L3.5A Monthly First-Look Analyses"
+							},
+
+							{
+								"id": "PODAAC-GHG1S-4FP01",
+								"volume": "25.33",
+								"files": "134625",
+								"users": "60",
+								"name": "GHRSST Level 4 G1SST Global Foundation Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-GHOST-4FK01",
+								"volume": "36.47",
+								"files": "61583",
+								"users": "57",
+								"name": "GHRSST Level 4 OSTIA Global Foundation Sea Surface Temperature Analysis"
+							}
+						]
+					}
+				]
+			},
+			
+			{
+				"year": "2013",
+				"data": [
+					{
+						"type": "FTP",
+						"data": [
+							{
+								"id": "PODAAC-GHGMR-4FJ01",
+								"volume": "23159.88",
+								"files": "784529",
+								"users": "1311",
+								"name": "GHRSST Level 4 MUR Global Foundation Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-GHOST-4FK01",
+								"volume": "708.31",
+								"files": "260746",
+								"users": "947",
+								"name": "GHRSST Level 4 OSTIA Global Foundation Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-ASOP2-12X01",
+								"volume": "2245.39",
+								"files": "1527598",
+								"users": "938",
+								"name": "MetOp-A ASCAT Level 2 12.5km Ocean Surface Wind Vectors"
+							},
+
+							{
+								"id": "PODAAC-CCF30-01XXX",
+								"volume": "5506.15",
+								"files": "883236",
+								"users": "790",
+								"name": "Cross-Calibrated Multi-Platform Ocean Surface Wind Vector L3.0 First-Look Analyses"
+							},
+
+							{
+								"id": "PODAAC-GHK10-41N01",
+								"volume": "44.41",
+								"files": "46706",
+								"users": "778",
+								"name": "GHRSST Level 4 K10_SST Global 1 meter Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-OSCAR-03D01",
+								"volume": "784.84",
+								"files": "6819",
+								"users": "773",
+								"name": "OSCAR third degree resolution ocean surface currents"
+							},
+
+							{
+								"id": "PODAAC-TELND-AN005",
+								"volume": "16.38",
+								"files": "2264",
+								"users": "715",
+								"name": "GRACE MONTHLY LAND WATER MASS GRIDS ANIMATION RELEASE 5.0"
+							},
+
+							{
+								"id": "PODAAC-GMSLM-TJ122",
+								"volume": "0.81",
+								"files": "1487",
+								"users": "696",
+								"name": "Global Mean Sea Level Trend from Integrated Multi-Mission Ocean Altimeters TOPEX/Poseidon Jason-1 and OST M/Jason-2 Version 2"
+							},
+
+							{
+								"id": "PODAAC-J2ODR-GPS00",
+								"volume": "154.11",
+								"files": "258163",
+								"users": "683",
+								"name": "OSTM GPS based orbit and SSHA OGDR"
+							},
+
+							{
+								"id": "PODAAC-GHMDA-2PJ01",
+								"volume": "31195.39",
+								"files": "11414640",
+								"users": "627",
+								"name": "GHRSST Level 2P Global Skin Sea Surface Temperature from the Moderate Resolution Imaging Spectroradiometer (MODIS) on the NASA Aqua satellite"
+							}
+						]
+					},
+
+					{
+						"type": "OPeNDAP",
+						"data": [
+							{
+								"id": "PODAAC-GHGMR-4FJ01",
+								"volume": "1915.34",
+								"files": "891570",
+								"users": "214",
+								"name": "GHRSST Level 4 MUR Global Foundation Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-OSCAR-03D01",
+								"volume": "187.84",
+								"files": "20233762",
+								"users": "204",
+								"name": "OSCAR third degree resolution ocean surface currents"
+							},
+
+							{
+								"id": "PODAAC-CCF30-01XXX",
+								"volume": "343.76",
+								"files": "217678",
+								"users": "108",
+								"name": "Cross-Calibrated Multi-Platform Ocean Surface Wind Vector L3.0 First-Look Analyses"
+							},
+
+							{
+								"id": "PODAAC-GHG1S-4FP01",
+								"volume": "554.4",
+								"files": "99180",
+								"users": "107",
+								"name": "GHRSST Level 4 G1SST Global Foundation Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-GHK10-41N01",
+								"volume": "1.36",
+								"files": "15517",
+								"users": "102",
+								"name": "GHRSST Level 4 K10_SST Global 1 meter Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-ASOP2-12X01",
+								"volume": "23.73",
+								"files": "44844",
+								"users": "79",
+								"name": "MetOp-A ASCAT Level 2 12.5km Ocean Surface Wind Vectors"
+							},
+
+							{
+								"id": "PODAAC-MODSA-TMO4D",
+								"volume": "33.14",
+								"files": "36267",
+								"users": "77",
+								"name": "MODIS Aqua Level 3 SST Thermal IR Monthly 4km Daytime"
+							},
+
+							{
+								"id": "PODAAC-GHOST-4FK01",
+								"volume": "169.07",
+								"files": "222875",
+								"users": "73",
+								"name": "GHRSST Level 4 OSTIA Global Foundation Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-GHAAO-4BC01",
+								"volume": "90.63",
+								"files": "753995",
+								"users": "70",
+								"name": "GHRSST Level 4 AVHRR_OI Global Blended Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-CCF35-01AM1",
+								"volume": "4",
+								"files": "43474",
+								"users": "59",
+								"name": "Cross-Calibrated Multi-Platform Ocean Surface Wind Vector L3.5A Monthly First-Look Analyses"
+							}
+						]
+					},
+
+					{
+						"type": "THREDDS",
+						"data": [
+							{
+								"id": "PODAAC-AQUAR-3S1DM",
+								"volume": "1.51",
+								"files": "11214",
+								"users": "21",
+								"name": "Aquarius Level 3 Sea Surface Salinity Standard Mapped Image Daily"
+							},
+
+							{
+								"id": "PODAAC-AQUAR-3SMOM",
+								"volume": "0.06",
+								"files": "1333",
+								"users": "19",
+								"name": "Aquarius Level 3 Sea Surface Salinity Standard Mapped Image Monthly"
+							},
+
+							{
+								"id": "PODAAC-AQUAR-3S7DM",
+								"volume": "0.88",
+								"files": "7164",
+								"users": "14",
+								"name": "Aquarius Level 3 Sea Surface Salinity Standard Mapped Image 7Day"
+							},
+
+							{
+								"id": "PODAAC-GHG1S-4FP01",
+								"volume": "131.12",
+								"files": "9690",
+								"users": "13",
+								"name": "GHRSST Level 4 G1SST Global Foundation Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-AQUAR-3TMKS",
+								"volume": "0.11",
+								"files": "1621",
+								"users": "9",
+								"name": "Aquarius CAP Level 3 Sea Surface Salinity Standard Mapped Image Monthly Data V2.0"
+							},
+
+							{
+								"id": "PODAAC-GHAAO-4BC01",
+								"volume": "3.95",
+								"files": "6681",
+								"users": "8",
+								"name": "GHRSST Level 4 AVHRR_OI Global Blended Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-QSXXX-L3002",
+								"volume": "0.73",
+								"files": "3454",
+								"users": "7",
+								"name": "SeaWinds on QuikSCAT Level 3 Daily Gridded Ocean Wind Vectors (JPL Version 2)"
+							},
+
+							{
+								"id": "PODAAC-GHGMR-4FJ01",
+								"volume": "52.24",
+								"files": "7476",
+								"users": "4",
+								"name": "GHRSST Level 4 MUR Global Foundation Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-OSCAR-03D01",
+								"volume": "0.34",
+								"files": "5",
+								"users": "3",
+								"name": "OSCAR third degree resolution ocean surface currents"
+							},
+
+							{
+								"id": "PODAAC-MODSA-TMO4N",
+								"volume": "0",
+								"files": "3",
+								"users": "2",
+								"name": "MODIS Aqua Level 3 SST Thermal IR Monthly 4km Nighttime"
+							}
+						]
+					},
+
+					{
+						"type": "LAS",
+						"data": [
+							{
+								"id": "PODAAC-MODSA-T1D4D",
+								"volume": "0.92",
+								"files": "2082",
+								"users": "145",
+								"name": "MODIS Aqua Level 3 SST Thermal IR  Daily 4km Daytime"
+							},
+
+							{
+								"id": "PODAAC-OSCAR-03D01",
+								"volume": "0.11",
+								"files": "948",
+								"users": "87",
+								"name": "OSCAR third degree resolution ocean surface currents"
+							},
+
+							{
+								"id": "OBPGOC-MODCA-3D4RE",
+								"volume": "0.18",
+								"files": "1535",
+								"users": "80",
+								"name": "MODIS Aqua Level 3 Global Daily Mapped 4 km Chlorophyll a"
+							},
+
+							{
+								"id": "PODAAC-RECSL-000V1",
+								"volume": "0.31",
+								"files": "1437",
+								"users": "76",
+								"name": "Reconstructed Sea Level Version 1"
+							},
+
+							{
+								"id": "PODAAC-GHAOI-4BC01",
+								"volume": "0.05",
+								"files": "841",
+								"users": "73",
+								"name": "GHRSST Level 4 AVHRR_AMSR_OI Global Blended Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "OBPGOC-MODCA-3M4RE",
+								"volume": "0.06",
+								"files": "900",
+								"users": "60",
+								"name": "MODIS Aqua Level 3 Global Monthly Mapped 4 km Chlorophyll a"
+							},
+
+							{
+								"id": "PODAAC-GHG1S-4FP01",
+								"volume": "0.11",
+								"files": "213",
+								"users": "57",
+								"name": "GHRSST Level 4 G1SST Global Foundation Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-QSXXX-L3002",
+								"volume": "0.09",
+								"files": "655",
+								"users": "48",
+								"name": "SeaWinds on QuikSCAT Level 3 Daily Gridded Ocean Wind Vectors (JPL Version 2)"
+							},
+
+							{
+								"id": "PODAAC-GHGMR-4FJ01",
+								"volume": "0.75",
+								"files": "327",
+								"users": "43",
+								"name": "GHRSST Level 4 MUR Global Foundation Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-GHAAO-4BC01",
+								"volume": "0.44",
+								"files": "582",
+								"users": "41",
+								"name": "GHRSST Level 4 AVHRR_OI Global Blended Sea Surface Temperature Analysis"
+							}
+						]
+					}
+				]
+			},
+
+			{
+				"year": "2014",
+				"data": [
+					{
+						"type": "FTP",
+						"data": [
+							{
+								"id": "PODAAC-GHGMR-4FJ01",
+								"volume": "20527.96",
+								"files": "880244",
+								"users": "1524",
+								"name": "GHRSST Level 4 MUR Global Foundation Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-GMSLM-TJ122",
+								"volume": "0.91",
+								"files": "2632",
+								"users": "1323",
+								"name": "Global Mean Sea Level Trend from Integrated Multi-Mission Ocean Altimeters TOPEX/Poseidon Jason-1 and OST M/Jason-2 Version 2"
+							},
+
+							{
+								"id": "PODAAC-J2ODR-GPS00",
+								"volume": "240.99",
+								"files": "405883",
+								"users": "1150",
+								"name": "OSTM GPS based orbit and SSHA OGDR"
+							},
+
+							{
+								"id": "PODAAC-GHOST-4FK01",
+								"volume": "939.58",
+								"files": "398366",
+								"users": "1128",
+								"name": "GHRSST Level 4 OSTIA Global Foundation Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-GHK10-41N01",
+								"volume": "26.55",
+								"files": "27973",
+								"users": "962",
+								"name": "GHRSST Level 4 K10_SST Global 1 meter Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-CCF30-01XXX",
+								"volume": "5287.51",
+								"files": "745538",
+								"users": "956",
+								"name": "Cross-Calibrated Multi-Platform Ocean Surface Wind Vector L3.0 First-Look Analyses"
+							},
+
+							{
+								"id": "PODAAC-OSCAR-03D01",
+								"volume": "976.53",
+								"files": "9796",
+								"users": "940",
+								"name": "OSCAR third degree resolution ocean surface currents"
+							},
+
+							{
+								"id": "PODAAC-J1GDR-BIN0C",
+								"volume": "404.37",
+								"files": "369619",
+								"users": "882",
+								"name": "Jason-1 level 2 Altimeter Geophysical Data Record version C binary format"
+							},
+
+							{
+								"id": "PODAAC-QSF12-L2B01",
+								"volume": "11915.35",
+								"files": "2215905",
+								"users": "813",
+								"name": "QuikSCAT Level 2B Ocean Wind Vectors in 12.5km Slice Composites Version 3 (Uncompressed)"
+							},
+
+							{
+								"id": "PODAAC-GHAAO-4BC01",
+								"volume": "173.8",
+								"files": "857837",
+								"users": "733",
+								"name": "GHRSST Level 4 AVHRR_OI Global Blended Sea Surface Temperature Analysis"
+							}
+						]
+					},
+
+					{
+						"type": "OPeNDAP",
+						"data": [
+							{
+								"id": "PODAAC-GHGMR-4FJ01",
+								"volume": "4525.98",
+								"files": "993657",
+								"users": "281",
+								"name": "GHRSST Level 4 MUR Global Foundation Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-CCF30-01XXX",
+								"volume": "172.28",
+								"files": "686012",
+								"users": "254",
+								"name": "Cross-Calibrated Multi-Platform Ocean Surface Wind Vector L3.0 First-Look Analyses"
+							},
+
+							{
+								"id": "PODAAC-OSCAR-03D01",
+								"volume": "94.49",
+								"files": "20150552",
+								"users": "192",
+								"name": "OSCAR third degree resolution ocean surface currents"
+							},
+
+							{
+								"id": "PODAAC-GHK10-41N01",
+								"volume": "1.82",
+								"files": "6007",
+								"users": "136",
+								"name": "GHRSST Level 4 K10_SST Global 1 meter Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-GHG1S-4FP01",
+								"volume": "124.98",
+								"files": "201636",
+								"users": "106",
+								"name": "GHRSST Level 4 G1SST Global Foundation Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-MODSA-TMO4D",
+								"volume": "29.06",
+								"files": "38001",
+								"users": "103",
+								"name": "MODIS Aqua Level 3 SST Thermal IR Monthly 4km Daytime"
+							},
+
+							{
+								"id": "PODAAC-MODSA-T1D4D",
+								"volume": "8.5",
+								"files": "487639",
+								"users": "95",
+								"name": "MODIS Aqua Level 3 SST Thermal IR  Daily 4km Daytime"
+							},
+
+							{
+								"id": "PODAAC-GHAAO-4BC01",
+								"volume": "102.43",
+								"files": "745943",
+								"users": "89",
+								"name": "GHRSST Level 4 AVHRR_OI Global Blended Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-QSF12-L2B01",
+								"volume": "3.54",
+								"files": "888",
+								"users": "88",
+								"name": "QuikSCAT Level 2B Ocean Wind Vectors in 12.5km Slice Composites Version 3 (Uncompressed)"
+							},
+
+							{
+								"id": "PODAAC-J2ODR-GPS00",
+								"volume": "0.59",
+								"files": "15316",
+								"users": "64",
+								"name": "OSTM GPS based orbit and SSHA OGDR"
+							}
+						]
+					},
+
+					{
+						"type": "THREDDS",
+						"data": [
+							{
+								"id": "PODAAC-GHGMR-4FJ01",
+								"volume": "464.21",
+								"files": "64819",
+								"users": "57",
+								"name": "GHRSST Level 4 MUR Global Foundation Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-CCF30-01XXX",
+								"volume": "15.72",
+								"files": "10810",
+								"users": "49",
+								"name": "Cross-Calibrated Multi-Platform Ocean Surface Wind Vector L3.0 First-Look Analyses"
+							},
+
+							{
+								"id": "PODAAC-AQUAR-3S1DM",
+								"volume": "11.02",
+								"files": "74717",
+								"users": "45",
+								"name": "Aquarius Level 3 Sea Surface Salinity Standard Mapped Image Daily"
+							},
+
+							{
+								"id": "PODAAC-GHG1S-4FP01",
+								"volume": "665.88",
+								"files": "16739",
+								"users": "42",
+								"name": "GHRSST Level 4 G1SST Global Foundation Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-AQUAR-3S7DM",
+								"volume": "1.91",
+								"files": "24465",
+								"users": "39",
+								"name": "Aquarius Level 3 Sea Surface Salinity Standard Mapped Image 7Day"
+							},
+
+							{
+								"id": "OBPGOC-MODCA-3D4RE",
+								"volume": "188.71",
+								"files": "40146",
+								"users": "35",
+								"name": "MODIS Aqua Level 3 Global Daily Mapped 4 km Chlorophyll a"
+							},
+
+							{
+								"id": "PODAAC-AQUAR-3SMOM",
+								"volume": "1.09",
+								"files": "15371",
+								"users": "34",
+								"name": "Aquarius Level 3 Sea Surface Salinity Standard Mapped Image Monthly"
+							},
+
+							{
+								"id": "PODAAC-GHAAO-4BC01",
+								"volume": "224.82",
+								"files": "243665",
+								"users": "33",
+								"name": "GHRSST Level 4 AVHRR_OI Global Blended Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-QSXXX-L3002",
+								"volume": "1.68",
+								"files": "6934",
+								"users": "28",
+								"name": "SeaWinds on QuikSCAT Level 3 Daily Gridded Ocean Wind Vectors (JPL Version 2)"
+							},
+
+							{
+								"id": "OBPGOC-MODCA-3M4RE",
+								"volume": "19.07",
+								"files": "29538",
+								"users": "24",
+								"name": "MODIS Aqua Level 3 Global Monthly Mapped 4 km Chlorophyll a"
+							}
+						]
+					},
+
+					{
+						"type": "LAS",
+						"data": [
+							{
+								"id": "PODAAC-OSCAR-03D01",
+								"volume": "3.38",
+								"files": "8782",
+								"users": "374",
+								"name": "OSCAR third degree resolution ocean surface currents"
+							},
+
+							{
+								"id": "PODAAC-RECSL-000V1",
+								"volume": "0.59",
+								"files": "6970",
+								"users": "251",
+								"name": "Reconstructed Sea Level Version 1"
+							},
+
+							{
+								"id": "PODAAC-MODSA-T1D4D",
+								"volume": "9.49",
+								"files": "1822",
+								"users": "231",
+								"name": "MODIS Aqua Level 3 SST Thermal IR  Daily 4km Daytime"
+							},
+
+							{
+								"id": "PODAAC-GHAOI-4BC01",
+								"volume": "0.14",
+								"files": "1779",
+								"users": "224",
+								"name": "GHRSST Level 4 AVHRR_AMSR_OI Global Blended Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-GHGDM-4FD02",
+								"volume": "0.55",
+								"files": "774",
+								"users": "200",
+								"name": "GHRSST Level 4 DMI_OI Global Foundation Sea Surface Temperature Analysis  (GDS version 2)"
+							},
+
+							{
+								"id": "OBPGOC-MODCA-3M4RE",
+								"volume": "0.33",
+								"files": "5245",
+								"users": "198",
+								"name": "MODIS Aqua Level 3 Global Monthly Mapped 4 km Chlorophyll a"
+							},
+
+							{
+								"id": "OBPGOC-MODCA-3D4RE",
+								"volume": "0.31",
+								"files": "905",
+								"users": "193",
+								"name": "MODIS Aqua Level 3 Global Daily Mapped 4 km Chlorophyll a"
+							},
+
+							{
+								"id": "PODAAC-GHAAO-4BC01",
+								"volume": "0.63",
+								"files": "3845",
+								"users": "176",
+								"name": "GHRSST Level 4 AVHRR_OI Global Blended Sea Surface Temperature Analysis"
+							},
+
+							{
+								"id": "PODAAC-CCF35-01AM1",
+								"volume": "1.33",
+								"files": "3807",
+								"users": "159",
+								"name": "Cross-Calibrated Multi-Platform Ocean Surface Wind Vector L3.5A Monthly First-Look Analyses"
+							},
+
+							{
+								"id": "PODAAC-GHOST-4FK02",
+								"volume": "0.15",
+								"files": "536",
+								"users": "144",
+								"name": "GHRSST Level 4 OSTIA Global Foundation Sea Surface Temperature Analysis (GDS version 2)"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

@@ -10,6 +10,8 @@ var Series = require('./components/series');
 var XAxis = require('./components/x-axis');
 var YAxis = require('./components/y-axis');
 var Base64 = require('base64').Base64;
+var numeral = require('numeral');
+var $ = require('jquery');
 
 module.exports = React.createClass({
   getInitialState: function() {
@@ -31,10 +33,10 @@ module.exports = React.createClass({
     return {
       datasets: [],
       colors: [],
-      xLabels: [],
+      xTicks: [],
       width: 600,
       height: 300,
-      padding: 30
+      padding: 50
     };
   },
   
@@ -45,6 +47,10 @@ module.exports = React.createClass({
         height = nextProps.height,
         datasets = nextProps.datasets,
         zipped = _.zip.call(null, datasets),
+        size = {
+          width: width - 2 * padding,
+          height: height - 2 * padding
+        },
         totals = _.map(zipped, function(values) {
           return _.reduce(values, function(memo, value) { 
             return memo + value; 
@@ -53,11 +59,20 @@ module.exports = React.createClass({
 
     this.setState({
       totals: totals,
-      size: {
-        width: width - 2 * padding,
-        height: height - 2 * padding
-      }
+      size: size
     });
+
+    this.getYScale()
+      .domain([0, d3.max(totals)])
+      .range([size.height, 0]);
+
+    var lengths = _.map(datasets, function(dataset) {
+      return dataset.length;
+    });
+
+    this.getXScale()
+      .domain(d3.range(d3.max(lengths)))
+      .rangeRoundBands([0, size.width], 0.1);
   },
   
   componentWillMount: function() {
@@ -90,15 +105,8 @@ module.exports = React.createClass({
   
   getXScale: function() {
     if (!this.xScale) {
-      var lengths = _.map(this.props.datasets, function(dataset) {
-            return dataset.length;
-          });
-
-      this.xScale = d3.scale.ordinal()
-        .domain(d3.range(d3.max(lengths)))
-        .rangeRoundBands([0, this.state.size.width], 0.1);
+      this.xScale = d3.scale.ordinal();
     }
-    
     return this.xScale;
   },
   
@@ -124,7 +132,10 @@ module.exports = React.createClass({
         props = this.props,
         state = this.state,
         padding = props.padding,
-        totals = state.totals;
+        totals = state.totals,
+        elem = $(this.getDOMNode()),
+        wscale = elem.width() / props.width,
+        hscale = elem.height() / props.height;
 
     if (tooltip) {
       var yScale = this.getYScale(),
@@ -139,11 +150,11 @@ module.exports = React.createClass({
           bar: bar,
         }
       });
-
+      
       tooltip.onShow();
       tooltip.setPosition({
-        y: bar.y,
-        x: bar.x + xScale.rangeBand() / 2
+        y: bar.y * wscale,
+        x: (bar.x + xScale.rangeBand() / 2) * hscale
       });
     }
   },
@@ -156,7 +167,7 @@ module.exports = React.createClass({
     }, 500);
   },
 
-  getTooltipContent: function() {
+  tooltip: function() {
     var state = this.state,
         props = this.props,
         stackLabels = props.stackLabels,
@@ -172,17 +183,17 @@ module.exports = React.createClass({
       var percentages = _.filter(_.map(datasets, function(dataset, i) {
         if (dataset[columnIndex]) {
           var value = dataset[columnIndex].toFixed(2),
-              percent = (dataset[columnIndex] * 100/ totals[columnIndex]).toFixed(2);
+              percent = dataset[columnIndex] / totals[columnIndex];
 
           return (
             <li key={i} className={i == stackIndex ? 'active' : ''}>
               <span className="stack-label">{stackLabels[i]}:&nbsp;</span>
               <span className="stack-statistic">
                 <span className="stack-value">
-                  {value}&nbsp;
+                  {numeral(value).format('0,0')}&nbsp;
                 </span>
                 <span className="stack-percent">
-                  ({percent}%)
+                  ({numeral(percent).format('0.00%')})
                 </span>
               </span>
             </li>
@@ -194,6 +205,13 @@ module.exports = React.createClass({
         <div className="tooltip-content">
           <ul className="list-unstyled">
             {percentages}
+
+            <li className="stack-totals">
+              <span className="stack-label">Total:&nbsp;</span>
+              <span className="stack-value">
+                {numeral(totals[columnIndex]).format('0,0')}
+              </span>
+            </li>
           </ul>
         </div>
       );
@@ -201,38 +219,36 @@ module.exports = React.createClass({
   },
   
   render: function() {
-    var self = this,
+    var xAxis, yAxis, self = this,
         props = this.props,
         state = this.state,
         datasets = props.datasets,
         padding = props.padding,
         colors = props.colors,
-        xLabels = props.xLabels,
+        xTicks = props.xTicks,
         size = state.size,
         totals = state.totals,
         xScale = this.getXScale(),
         yScale = this.getYScale();
-        
-    yScale
-      .domain([0, d3.max(state.totals)])
-      .range([size.height, 0]);
 
     var totals = _.map(totals, function(total, i) {
       return (
         <Markup
           key={i}
+          animate={true}
           x={xScale(i) + (xScale.rangeBand() / 2) + padding} 
           y={yScale(total) + padding - 10}>
-            {total.toFixed(2)}
+            {numeral(total).format('0.00a')}
         </Markup>
       );
     });
-
+    
     var series = _.map(datasets, function(dataset, i) {
       return (
         <Series
           onBarMouseEnter={self.onBarMouseEnter}
           onBarMouseLeave={self.onBarMouseLeave}
+          onBarClick={props.onBarClick}
           xOffset={padding}
           yOffset={padding}
           data={dataset}
@@ -240,13 +256,12 @@ module.exports = React.createClass({
           stackIndex={i}
           xScale={xScale}
           yScale={yScale}
-          size={size}
           color={colors[i]}
           ref={'dataSeries' + i}
           key={i} />
       );
     });
-
+    
     return (
       <div className="chart">
         <Canvas width={this.props.width} height={this.props.height}>
@@ -254,25 +269,28 @@ module.exports = React.createClass({
           <g className="series">{series}</g> 
           
           <YAxis 
-            yScale={yScale}
+            label={props.yLabel}
+            scale={yScale}
             min={0}
             max={d3.max(state.totals)}
             width={size.width}
             height={size.height}
-            xOffset={padding - 5}
+            xOffset={padding}
             yOffset={padding}
-            unit={"M"} />
+            ref="yAxis" />
 
           <XAxis 
-            xScale={xScale} 
-            format={xLabels}
+            scale={xScale} 
+            label={props.xLabel}
+            ticks={xTicks}
             width={size.width} 
             height={size.height}
-            xOffset={padding} 
-            yOffset={padding + 2} />
+            xOffset={padding}
+            yOffset={padding + 2}
+            ref="xAxis" />
         </Canvas>
 
-        <Tooltip ref="tooltip">{this.getTooltipContent()}</Tooltip>
+        <Tooltip ref="tooltip">{this.tooltip()}</Tooltip>
       </div>
     );
   }

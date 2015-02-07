@@ -35,6 +35,7 @@ module.exports = React.createClass({
         height={state.height} 
         x={state.x} 
         y={state.y} 
+        onClick={props.onClick} 
         onMouseEnter={props.onMouseEnter} 
         onMouseLeave={props.onMouseLeave} />
     );

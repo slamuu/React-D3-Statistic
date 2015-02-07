@@ -8,6 +8,7 @@ module.exports = React.createClass({
 
   getInitialState: function() {
     return {
+      animate: false,
       fill: 'black',
       x: 0, 
       y: 0
@@ -15,7 +16,12 @@ module.exports = React.createClass({
   },
 
   componentWillReceiveProps: function(nextProps) {
-    this.animate(nextProps, 1000, 'cubic-in-out');
+    if (nextProps.animate || this.state.animate) {
+      this.animate(nextProps, 1000, 'cubic-in-out');
+    }
+    else {
+      this.setState(nextProps);
+    }
   },
 
   componentDidMount: function() {
@@ -29,6 +35,7 @@ module.exports = React.createClass({
         fontSize="10px"
         textAnchor="middle"
         fill={this.state.fill}
+        transform={this.state.transform}
         x={this.state.x} 
         y={this.state.y}>
           {this.props.children}

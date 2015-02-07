@@ -3,79 +3,76 @@
 		"year": "2011",
 		"data": [
 			{
-				"type": "FTP",
+				"statistic": "files",
+				"yaxis": "Files",
+				"xaxis": "2011",
 				"data": [
 					{
-						"month": "Jan",
-						"volume": 283.94,
-						"users": 187,
-						"files": 39394
-					},
+						"type": "FTP",
+						"data": [
+							39394,
+							110027,
+							360888,
+							691437,
+							4340009,
+							4681577,
+							5167883,
+							5204305,
+							7884613,
+							7398477,
+							5400657,
+							4454918
+						]
+					}
+				]
+			},
+
+			{
+				"statistic": "volume",
+				"yaxis": "GB",
+				"xaxis": "2011",
+				"data": [
 					{
-						"month": "Feb",
-						"volume": 279.57,
-						"users": 321,
-						"files": 110027
-					},
+						"type": "FTP",
+						"data": [
+							283.94,
+							279.57,
+							633.29,
+							1353.43,
+							9867.71,
+							12400.35,
+							12695.27,
+							8769.55,
+							19062.78,
+							19192.03,
+							17265.43,
+							15208.52
+						]
+					}
+				]
+			},
+
+			{
+				"statistic": "users",
+				"yaxis": "Users",
+				"xaxis": "2011",
+				"data": [
 					{
-						"month": "Mar",
-						"volume": 633.29,
-						"users": 425,
-						"files": 360888
-					},
-					{
-						"month": "Apr",
-						"volume": 1353.43,
-						"users": 933,
-						"files": 691437
-					},
-					{
-						"month": "May",
-						"volume": 9867.71,
-						"users": 3247,
-						"files": 4340009
-					},
-					{
-						"month": "Jun",
-						"volume": 12400.35,
-						"users": 2643,
-						"files": 4681577
-					},
-					{
-						"month": "Jul",
-						"volume": 12695.27,
-						"users": 2175,
-						"files": 5167883
-					},
-					{
-						"month": "Aug",
-						"volume": 8769.55,
-						"users": 2347,
-						"files": 5204305
-					},
-					{
-						"month": "Sep",
-						"volume": 19062.78,
-						"users": 2794,
-						"files": 7884613
-					},
-					{
-						"month": "Oct",
-						"volume": 19192.03,
-						"users": 2750,
-						"files": 7398477
-					},
-					{
-						"month": "Nov",
-						"volume": 17265.43,
-						"users": 2595,
-						"files": 5400657
-					},
-					{
-						"month": "Dec",
-						"volume": 15208.52,
-						"users": 1975,
-						"files": 4454918
+						"type": "FTP",
+						"data": [
+							187,
+							321,
+							425,
+							933,
+							3247,
+							2643,
+							2175,
+							2347,
+							2794,
+							2750,
+							2595,
+							1975
+						]
 					}
 				]
 			}
@@ -86,156 +83,127 @@
 		"year": "2012",
 		"data": [
 			{
-				"type": "FTP",
+				"statistic": "files",
+				"yaxis": "Files",
+				"xaxis": "2012",
 				"data": [
 					{
-						"month": "Jan",
-						"volume": 13766.46,
-						"users": 2462,
-						"files": 4402038
+						"type": "FTP",
+						"data": [
+							4402038,
+							6254499,
+							6306274,
+							6974296,
+							6191716,
+							4056157,
+							3513093,
+							4532285,
+							3424828,
+							5824152,
+							5109724,
+							5998981
+						]
 					},
 					{
-						"month": "Feb",
-						"volume": 19800.79,
-						"users": 2881,
-						"files": 6254499
-					},
-					{
-						"month": "Mar",
-						"volume": 16507.12,
-						"users": 3037,
-						"files": 6306274
-					},
-					{
-						"month": "Apr",
-						"volume": 15077.85,
-						"users": 2448,
-						"files": 6974296
-					},
-					{
-						"month": "May",
-						"volume": 17475.11,
-						"users": 2571,
-						"files": 6191716
-					},
-					{
-						"month": "Jun",
-						"volume": 13305.85,
-						"users": 2372,
-						"files": 4056157
-					},
-					{
-						"month": "Jul",
-						"volume": 14514.05,
-						"users": 2398,
-						"files": 3513093
-					},
-					{
-						"month": "Aug",
-						"volume": 19044.38,
-						"users": 2538,
-						"files": 4532285
-					},
-					{
-						"month": "Sep",
-						"volume": 13373.86,
-						"users": 2741,
-						"files": 3424828
-					},
-					{
-						"month": "Oct",
-						"volume": 19519.81,
-						"users": 2917,
-						"files": 5824152
-					},
-					{
-						"month": "Nov",
-						"volume": 15774.95,
-						"users": 2699,
-						"files": 5109724
-					},
-					{
-						"month": "Dec",
-						"volume": 24388.74,
-						"users": 2205,
-						"files": 5998981
+						"type": "OPeNDAP",
+						"data": [
+							35327,
+							114909,
+							60565,
+							413241,
+							888999,
+							294326,
+							1394219,
+							737964,
+							413279,
+							607571,
+							246366,
+							1286241
+						]
 					}
 				]
 			},
+
 			{
-				"type": "OPeNDAP",
+				"statistic": "volume",
+				"yaxis": "GB",
+				"xaxis": "2012",
 				"data": [
 					{
-						"month": "Jan",
-						"volume": 61.82,
-						"users": 135,
-						"files": 35327
+						"type": "FTP",
+						"data": [
+							13766.46,
+							19800.79,
+							16507.12,
+							15077.85,
+							17475.11,
+							13305.85,
+							14514.05,
+							19044.38,
+							13373.86,
+							19519.81,
+							15774.95,
+							24388.74
+						]
 					},
 					{
-						"month": "Feb",
-						"volume": 380.96,
-						"users": 136,
-						"files": 114909
+						"type": "OPeNDAP",
+						"data": [
+							61.82,
+							380.96,
+							5.55,
+							256.75,
+							78.91,
+							104.66,
+							407.34,
+							170.92,
+							18.31,
+							38.50,
+							47.28,
+							158.70
+						]
+					}
+				]
+			},
+
+			{
+				"statistic": "users",
+				"yaxis": "Users",
+				"xaxis": "2012",
+				"data": [
+					{
+						"type": "FTP",
+						"data": [
+							2462,
+							2881,
+							3037,
+							2448,
+							2571,
+							2372,
+							2398,
+							2538,
+							2741,
+							2917,
+							2699,
+							2205
+						]
 					},
 					{
-						"month": "Mar",
-						"volume": 5.55,
-						"users": 27,
-						"files": 60565
-					},
-					{
-						"month": "Apr",
-						"volume": 256.75,
-						"users": 132,
-						"files": 413241
-					},
-					{
-						"month": "May",
-						"volume": 78.91,
-						"users": 175,
-						"files": 888999
-					},
-					{
-						"month": "Jun",
-						"volume": 104.66,
-						"users": 161,
-						"files": 294326
-					},
-					{
-						"month": "Jul",
-						"volume": 407.34,
-						"users": 162,
-						"files": 1394219
-					},
-					{
-						"month": "Aug",
-						"volume": 170.92,
-						"users": 203,
-						"files": 737964
-					},
-					{
-						"month": "Sep",
-						"volume": 18.31,
-						"users": 141,
-						"files": 413279
-					},
-					{
-						"month": "Oct",
-						"volume": 38.50,
-						"users": 157,
-						"files": 607571
-					},
-					{
-						"month": "Nov",
-						"volume": 47.28,
-						"users": 178,
-						"files": 246366
-					},
-					{
-						"month": "Dec",
-						"volume": 158.70,
-						"users": 158,
-						"files": 1286241
+						"type": "OPeNDAP",
+						"data": [
+							135,
+							136,
+							27,
+							132,
+							175,
+							161,
+							162,
+							203,
+							141,
+							157,
+							178,
+							158
+						]
 					}
 				]
 			}
@@ -246,310 +214,229 @@
 		"year": "2013",
 		"data": [
 			{
-				"type": "FTP",
+				"statistic": "files",
+				"yaxis": "Files",
+				"xaxis": "2013",
 				"data": [
 					{
-						"month": "Jan",
-						"volume": 20100.32,
-						"users": 3277,
-						"files": 6379488
+						"type": "FTP",
+						"data": [
+							6379488,
+							6009192,
+							6228953,
+							9182814,
+							8536620,
+							4718084,
+							5215799,
+							4738926,
+							4327931,
+							4666386,
+							3758371,
+							3885405
+						]
 					},
 					{
-						"month": "Feb",
-						"volume": 14923.82,
-						"users": 3158,
-						"files": 6009192
+						"type": "OPeNDAP",
+						"data": [
+							1006133,
+							2761276,
+							1292013,
+							6274544,
+							2174532,
+							1204433,
+							2397405,
+							672649,
+							386357,
+							1830142,
+							2379597,
+							1686359
+						]
 					},
 					{
-						"month": "Mar",
-						"volume": 16118.02,
-						"users": 3001,
-						"files": 6228953
+						"type": "THREDDS",
+						"data": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							36864,
+							31393,
+							36982
+						]
 					},
 					{
-						"month": "Apr",
-						"volume": 26265.02,
-						"users": 3204,
-						"files": 9182814
-					},
-					{
-						"month": "May",
-						"volume": 25304.67,
-						"users": 3444,
-						"files": 8536620
-					},
-					{
-						"month": "Jun",
-						"volume": 18014.27,
-						"users": 3293,
-						"files": 4718084
-					},
-					{
-						"month": "Jul",
-						"volume": 23139.55,
-						"users": 2811,
-						"files": 5215799
-					},
-					{
-						"month": "Aug",
-						"volume": 23608.85,
-						"users": 2553,
-						"files": 4738926
-					},
-					{
-						"month": "Sep",
-						"volume": 24286.06,
-						"users": 2971,
-						"files": 4327931
-					},
-					{
-						"month": "Oct",
-						"volume": 21763.42,
-						"users": 2838,
-						"files": 4666386
-					},
-					{
-						"month": "Nov",
-						"volume": 17711.35,
-						"users": 3339,
-						"files": 3758371
-					},
-					{
-						"month": "Dec",
-						"volume": 19638.87,
-						"users": 2815,
-						"files": 3885405
+						"type": "LAS",
+						"data": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							2449,
+							4824,
+							5346
+						]
 					}
 				]
 			},
+
 			{
-				"type": "OPeNDAP",
+				"statistic": "volume",
+				"yaxis": "GB",
+				"xaxis": "2013",
 				"data": [
 					{
-						"month": "Jan",
-						"volume": 204.57,
-						"users": 144,
-						"files": 1006133
+						"type": "FTP",
+						"data": [
+							20100.32,
+							14923.82,
+							16118.02,
+							26265.02,
+							25304.67,
+							18014.27,
+							23139.55,
+							23608.85,
+							24286.06,
+							21763.42,
+							17711.35,
+							19638.87
+						]
 					},
 					{
-						"month": "Feb",
-						"volume": 75.04,
-						"users": 170,
-						"files": 2761276
+						"type": "OPeNDAP",
+						"data": [
+							204.57,
+							75.04,
+							58.53,
+							189.55,
+							221.79,
+							311.93,
+							240.85,
+							813.71,
+							181.34,
+							848.06,
+							367.16,
+							391.32
+						]
 					},
 					{
-						"month": "Mar",
-						"volume": 58.53,
-						"users": 255,
-						"files": 1292013
+						"type": "THREDDS",
+						"data": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							57.48,
+							126.25,
+							140.03
+						]
 					},
 					{
-						"month": "Apr",
-						"volume": 189.55,
-						"users": 254,
-						"files": 6274544
-					},
-					{
-						"month": "May",
-						"volume": 221.79,
-						"users": 276,
-						"files": 2174532
-					},
-					{
-						"month": "Jun",
-						"volume": 311.93,
-						"users": 240,
-						"files": 1204433
-					},
-					{
-						"month": "Jul",
-						"volume": 240.85,
-						"users": 201,
-						"files": 2397405
-					},
-					{
-						"month": "Aug",
-						"volume": 813.71,
-						"users": 191,
-						"files": 672649
-					},
-					{
-						"month": "Sep",
-						"volume": 181.34,
-						"users": 208,
-						"files": 386357
-					},
-					{
-						"month": "Oct",
-						"volume": 848.06,
-						"users": 260,
-						"files": 1830142
-					},
-					{
-						"month": "Nov",
-						"volume": 367.16,
-						"users": 273,
-						"files": 2379597
-					},
-					{
-						"month": "Dec",
-						"volume": 391.32,
-						"users": 223,
-						"files": 1686359
+						"type": "LAS",
+						"data": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0.91,
+							1.05,
+							2.34
+						]
 					}
 				]
 			},
+
 			{
-				"type": "THREDDS",
+				"statistic": "users",
+				"yaxis": "Users",
+				"xaxis": "2013",
 				"data": [
 					{
-						"month": "Jan",
-						"volume": 0,
-						"users": 0,
-						"files": 0
+						"type": "FTP",
+						"data": [
+							3277,
+							3158,
+							3001,
+							3204,
+							3444,
+							3293,
+							2811,
+							2553,
+							2971,
+							2838,
+							3339,
+							2815
+						]
 					},
 					{
-						"month": "Feb",
-						"volume": 0,
-						"users": 0,
-						"files": 0
+						"type": "OPeNDAP",
+						"data": [
+							144,
+							170,
+							255,
+							254,
+							276,
+							240,
+							201,
+							191,
+							208,
+							260,
+							273,
+							223
+						]
 					},
 					{
-						"month": "Mar",
-						"volume": 0,
-						"users": 0,
-						"files": 0
+						"type": "THREDDS",
+						"data": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							27,
+							39,
+							45
+						]
 					},
 					{
-						"month": "Apr",
-						"volume": 0,
-						"users": 0,
-						"files": 0
-					},
-					{
-						"month": "May",
-						"volume": 0,
-						"users": 0,
-						"files": 0
-					},
-					{
-						"month": "Jun",
-						"volume": 0,
-						"users": 0,
-						"files": 0
-					},
-					{
-						"month": "Jul",
-						"volume": 0,
-						"users": 0,
-						"files": 0
-					},
-					{
-						"month": "Aug",
-						"volume": 0,
-						"users": 0,
-						"files": 0
-					},
-					{
-						"month": "Sep",
-						"volume": 0,
-						"users": 0,
-						"files": 0
-					},
-					{
-						"month": "Oct",
-						"volume": 57.48,
-						"users": 27,
-						"files": 36864
-					},
-					{
-						"month": "Nov",
-						"volume": 126.25,
-						"users": 39,
-						"files": 31393
-					},
-					{
-						"month": "Dec",
-						"volume": 140.03,
-						"users": 45,
-						"files": 36982
-					}
-				]
-			},
-			{
-				"type": "LAS",
-				"data": [
-					{
-						"month": "Jan",
-						"volume": 0,
-						"users": 0,
-						"files": 0
-					},
-					{
-						"month": "Feb",
-						"volume": 0,
-						"users": 0,
-						"files": 0
-					},
-					{
-						"month": "Mar",
-						"volume": 0,
-						"users": 0,
-						"files": 0
-					},
-					{
-						"month": "Apr",
-						"volume": 0,
-						"users": 0,
-						"files": 0
-					},
-					{
-						"month": "May",
-						"volume": 0,
-						"users": 0,
-						"files": 0
-					},
-					{
-						"month": "Jun",
-						"volume": 0,
-						"users": 0,
-						"files": 0
-					},
-					{
-						"month": "Jul",
-						"volume": 0,
-						"users": 0,
-						"files": 0
-					},
-					{
-						"month": "Aug",
-						"volume": 0,
-						"users": 0,
-						"files": 0
-					},
-					{
-						"month": "Sep",
-						"volume": 0,
-						"users": 0,
-						"files": 0
-					},
-					{
-						"month": "Oct",
-						"volume": 0.91,
-						"users": 178,
-						"files": 2449
-					},
-					{
-						"month": "Nov",
-						"volume": 1.05,
-						"users": 201,
-						"files": 4824
-					},
-					{
-						"month": "Dec",
-						"volume": 2.34,
-						"users": 182,
-						"files": 5346
+						"type": "LAS",
+						"data": [
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							178,
+							201,
+							182
+						]
 					}
 				]
 			}
@@ -557,313 +444,232 @@
 	},
 
 	{
-		"year": "2013",
+		"year": "2014",
 		"data": [
 			{
-				"type": "FTP",
+				"statistic": "files",
+				"yaxis": "Files",
+				"xaxis": "2014",
 				"data": [
 					{
-						"month": "Jan",
-						"volume": 14944.80,
-						"users": 2926,
-						"files": 3172099
+						"type": "FTP",
+						"data": [
+							3172099,
+							3463241,
+							4163420,
+							4073770,
+							5100005,
+							5232349,
+							4782461,
+							4855997,
+							4094245,
+							4536845,
+							3685394,
+							3468889
+						]
 					},
 					{
-						"month": "Feb",
-						"volume": 15098.45,
-						"users": 3726,
-						"files": 3463241
+						"type": "OPeNDAP",
+						"data": [
+							2990240,
+							928874,
+							3644110,
+							2031619,
+							2771146,
+							1539738,
+							1808347,
+							1033641,
+							2532998,
+							1164420,
+							2923796,
+							2212120
+						]
 					},
 					{
-						"month": "Mar",
-						"volume": 22633.27,
-						"users": 4188,
-						"files": 4163420
+						"type": "THREDDS",
+						"data": [
+							32030,
+							27345,
+							40736,
+							87489,
+							152472,
+							44470,
+							43383,
+							31345,
+							70554,
+							105091,
+							132175,
+							42082
+						]
 					},
 					{
-						"month": "Apr",
-						"volume": 19287.81,
-						"users": 4197,
-						"files": 4073770
-					},
-					{
-						"month": "May",
-						"volume": 26259.65,
-						"users": 3955,
-						"files": 5100005
-					},
-					{
-						"month": "Jun",
-						"volume": 30475.36,
-						"users": 3597,
-						"files": 5232349
-					},
-					{
-						"month": "Jul",
-						"volume": 23988.17,
-						"users": 3439,
-						"files": 4782461
-					},
-					{
-						"month": "Aug",
-						"volume": 27237.01,
-						"users": 2032,
-						"files": 4855997
-					},
-					{
-						"month": "Sep",
-						"volume": 25224.31,
-						"users": 2305,
-						"files": 4094245
-					},
-					{
-						"month": "Oct",
-						"volume": 25895.87,
-						"users": 2407,
-						"files": 4536845
-					},
-					{
-						"month": "Nov",
-						"volume": 11264.35,
-						"users": 1602,
-						"files": 2311067
-					},
-					{
-						"month": "Dec",
-						"volume": 0,
-						"users": 0,
-						"files": 0
+						"type": "LAS",
+						"data": [
+							8025,
+							5113,
+							5151,
+							2853,
+							5957,
+							5212,
+							3523,
+							3435,
+							4257,
+							4218,
+							3675,
+							6016
+						]
 					}
 				]
 			},
+
 			{
-				"type": "OPeNDAP",
+				"statistic": "volume",
+				"yaxis": "GB",
+				"xaxis": "2014",
 				"data": [
 					{
-						"month": "Jan",
-						"volume": 429.77,
-						"users": 247,
-						"files": 3172099
+						"type": "FTP",
+						"data": [
+							14944.80,
+							15098.45,
+							22633.27,
+							19287.81,
+							26259.65,
+							30475.36,
+							23988.17,
+							27237.01,
+							25224.31,
+							25895.87,
+							16800.45,
+							18376.48
+						]
 					},
 					{
-						"month": "Feb",
-						"volume": 669.55,
-						"users": 286,
-						"files": 3463241
+						"type": "OPeNDAP",
+						"data": [
+							429.77,
+							669.55,
+							290.33,
+							107.40,
+							610.00,
+							140.90,
+							172.84,
+							531.54,
+							672.50,
+							184.05,
+							1412.51,
+							573.89
+						]
 					},
 					{
-						"month": "Mar",
-						"volume": 290.33,
-						"users": 246,
-						"files": 4163420
+						"type": "THREDDS",
+						"data": [
+							89.18,
+							40.89,
+							83.30,
+							229.82,
+							122.16,
+							165.10,
+							114.92,
+							35.41,
+							69.71,
+							55.57,
+							310.46,
+							641.12
+						]
 					},
 					{
-						"month": "Apr",
-						"volume": 107.40,
-						"users": 255,
-						"files": 4073770
-					},
-					{
-						"month": "May",
-						"volume": 610.00,
-						"users": 207,
-						"files": 5100005
-					},
-					{
-						"month": "Jun",
-						"volume": 140.90,
-						"users": 246,
-						"files": 5232349
-					},
-					{
-						"month": "Jul",
-						"volume": 172.84,
-						"users": 246,
-						"files": 4782461
-					},
-					{
-						"month": "Aug",
-						"volume": 531.54,
-						"users": 205,
-						"files": 4855997
-					},
-					{
-						"month": "Sep",
-						"volume": 672.50,
-						"users": 229,
-						"files": 4094245
-					},
-					{
-						"month": "Oct",
-						"volume": 184.05,
-						"users": 237,
-						"files": 4536845
-					},
-					{
-						"month": "Nov",
-						"volume": 782.31,
-						"users": 202,
-						"files": 2311067
-					},
-					{
-						"month": "Dec",
-						"volume": 0,
-						"users": 0,
-						"files": 0
+						"type": "LAS",
+						"data": [
+							11.87,
+							0.15,
+							1.83,
+							1.90,
+							1.40,
+							6.12,
+							1.57,
+							0.49,
+							3.11,
+							0.46,
+							3.40,
+							4.61
+						]
 					}
 				]
 			},
+
 			{
-				"type": "THREDDS",
+				"statistic": "users",
+				"yaxis": "Users",
+				"xaxis": "2014",
 				"data": [
 					{
-						"month": "Jan",
-						"volume": 89.18,
-						"users": 24,
-						"files": 32030
+						"type": "FTP",
+						"data": [
+							2926,
+							3726,
+							4188,
+							4197,
+							3955,
+							3597,
+							3439,
+							2032,
+							2305,
+							2407,
+							2276,
+							2038
+						]
 					},
 					{
-						"month": "Feb",
-						"volume": 40.89,
-						"users": 30,
-						"files": 27345
+						"type": "OPeNDAP",
+						"data": [
+							247,
+							286,
+							246,
+							255,
+							207,
+							246,
+							246,
+							205,
+							229,
+							237,
+							297,
+							303
+						]
 					},
 					{
-						"month": "Mar",
-						"volume": 83.30,
-						"users": 27,
-						"files": 40736
+						"type": "THREDDS",
+						"data": [
+							24,
+							30,
+							27,
+							58,
+							32,
+							64,
+							87,
+							76,
+							51,
+							76,
+							75,
+							52
+						]
 					},
 					{
-						"month": "Apr",
-						"volume": 229.82,
-						"users": 58,
-						"files": 87489
-					},
-					{
-						"month": "May",
-						"volume": 122.16,
-						"users": 32,
-						"files": 152472
-					},
-					{
-						"month": "Jun",
-						"volume": 165.10,
-						"users": 64,
-						"files": 44470
-					},
-					{
-						"month": "Jul",
-						"volume": 114.92,
-						"users": 87,
-						"files": 43383
-					},
-					{
-						"month": "Aug",
-						"volume": 35.41,
-						"users": 76,
-						"files": 31345
-					},
-					{
-						"month": "Sep",
-						"volume": 69.71,
-						"users": 51,
-						"files": 70554
-					},
-					{
-						"month": "Oct",
-						"volume": 55.57,
-						"users": 76,
-						"files": 105091
-					},
-					{
-						"month": "Nov",
-						"volume": 129.78,
-						"users": 49,
-						"files": 101018
-					},
-					{
-						"month": "Dec",
-						"volume": 0,
-						"users": 0,
-						"files": 0
-					}
-				]
-			},
-			{
-				"type": "LAS",
-				"data": [
-					{
-						"month": "Jan",
-						"volume": 11.87,
-						"users": 127,
-						"files": 8025
-					},
-					{
-						"month": "Feb",
-						"volume": 0.15,
-						"users": 183,
-						"files": 5113
-					},
-					{
-						"month": "Mar",
-						"volume": 1.83,
-						"users": 169,
-						"files": 5151
-					},
-					{
-						"month": "Apr",
-						"volume": 1.90,
-						"users": 208,
-						"files": 2853
-					},
-					{
-						"month": "May",
-						"volume": 1.40,
-						"users": 148,
-						"files": 5957
-					},
-					{
-						"month": "Jun",
-						"volume": 6.12,
-						"users": 248,
-						"files": 5212
-					},
-					{
-						"month": "Jul",
-						"volume": 1.57,
-						"users": 153,
-						"files": 3523
-					},
-					{
-						"month": "Aug",
-						"volume": 0.49,
-						"users": 166,
-						"files": 3435
-					},
-					{
-						"month": "Sep",
-						"volume": 3.11,
-						"users": 166,
-						"files": 4257
-					},
-					{
-						"month": "Oct",
-						"volume": 0.46,
-						"users": 252,
-						"files": 4218
-					},
-					{
-						"month": "Nov",
-						"volume": 0.53,
-						"users": 136,
-						"files": 1650
-					},
-					{
-						"month": "Dec",
-						"volume": 0,
-						"users": 0,
-						"files": 0
+						"type": "LAS",
+						"data": [
+							127,
+							183,
+							169,
+							208,
+							148,
+							248,
+							153,
+							166,
+							166,
+							252,
+							225,
+							204
+						]
 					}
 				]
 			}

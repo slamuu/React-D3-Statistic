@@ -30,8 +30,21 @@ module.exports = React.createClass({
   },
 
   componentWillReceiveProps: function(nextProps) {
-    var bars = this.getBarPositions(nextProps);
-    this.animate({ bars: bars }, 1000, 'cubic-in-out');
+    var currentBars = this.state.bars,
+        targetBars = this.getBarPositions(nextProps);
+
+    if (targetBars.length < currentBars.length) {
+      for (var i = targetBars.length; i < currentBars.length; i++) {
+        targetBars[i] = {
+          value: 0,
+          height: 0,
+          y: this.props.yScale(0),
+          x: currentBars[i].x
+        };
+      }
+    }
+
+    this.animate({ bars: targetBars }, 1000, 'cubic-in-out');
   },
 
   componentDidMount: function() {
@@ -48,7 +61,7 @@ module.exports = React.createClass({
     this.setState({ bars: initial });
     this.animate({ bars: bars }, 1000, 'cubic-in-out');
   },
-
+  
   getBarPositions: function(props) {
     var props = props || this.props,
         data = props.data,
@@ -78,6 +91,7 @@ module.exports = React.createClass({
         stackIndex = props.stackIndex,
         onMouseEnter = props.onBarMouseEnter,
         onMouseLeave = props.onBarMouseLeave,
+        onClick = props.onBarClick,
         yScale = props.yScale,
         xScale = props.xScale;
 
@@ -91,6 +105,7 @@ module.exports = React.createClass({
           color={props.color} 
           ref={'bar' + i} 
           key={i} 
+          onClick={onClick && onClick.bind(null, bar, i, stackIndex)} 
           onMouseEnter={onMouseEnter.bind(null, bar, i, stackIndex)} 
           onMouseLeave={onMouseLeave.bind(null, bar, i, stackIndex)} />
       );

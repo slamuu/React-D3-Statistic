@@ -45,23 +45,30 @@
   "browser": {
     "jquery": "./bower_components/jquery/dist/jquery.js",
     "lodash": "./bower_components/lodash/dist/lodash.compat.js",
-    "react": "./bower_components/react/react-with-addons.js",
     "d3": "./bower_components/d3/d3.js",
-    "base64": "./bower_components/js-base64/base64.js"
+    "base64": "./bower_components/js-base64/base64.js",
+    "numeral": "./bower_components/numeral/numeral.js"
   },
   "browserify-shim": {
+    "@bower": "./bower_components",
     "d3": "d3",
     "lodash": "_"
   },
   "browserify": {
     "transform": [
+      "browserify-shim",
       [
-        "reactify", 
+        "reactify",
         {
-          "extensions": [".jsx"]
+          "extensions": [
+            ".jsx"
+          ]
         }
-      ],
-      "browserify-shim"
+      ]
     ]
+  },
+  "dependencies": {
+    "react": "^0.12.2",
+    "reactable": "^0.9.7"
   }
 }

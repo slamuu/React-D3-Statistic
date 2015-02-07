@@ -4,6 +4,94 @@ body {
   font-family: sans-serif, arial;
 }
 
+.clear-fix,
+.row {
+  clear: both;
+}
+
+.chart-title {
+  text-align: center;
+}
+
+.left-column {
+  float: left;
+  width: 15%;
+  padding-top: 10px;
+}
+
+.right-column {
+  float: right;
+  width: 85%;
+  padding-top: 10px;
+}
+
+.archive .years-control {
+  position: absolute;
+}
+
+.top-10-toggle {
+  position: absolute;
+  cursor: pointer;
+  top: 8px;
+  right: 10px;
+  color: #2073df;
+  font-size: 1.5em;
+
+  &:hover,
+  &:focus {
+    font-weight: bold;
+  }
+}
+
+.top-10-title {
+  font-size: 18px;
+  text-align: center;
+}
+
+.top-10-statistic {
+  text-transform: capitalize;
+}
+
+.top-10-table {
+  display: none;
+  width: 100%;
+  font-size: 12px;
+
+  th {
+    text-align: center;
+    vertical-align: top;
+  }
+
+  td {
+    text-align: left;
+    vertical-align: top;
+  }
+  
+  tbody {
+    td {
+      vertical-align: top;
+      padding: 5px;
+      border-top: 1px solid #ccc;
+    }
+  }
+}
+
+.top-10-name {
+  width: 350px;
+  font-size: 10px;
+}
+
+.top-10-link {
+  font-size: 12px;
+}
+
+.toggle-type,
+.select-title-label {
+  font-size: 10px;
+  line-height: 12px;
+  margin-bottom: 5px;
+}
+
 .select-year {
   border: 2px solid #ccc;
   border-radius: 3px;
@@ -16,12 +104,17 @@ body {
   margin: 0;
 }
 
+.tabs {
+  margin: 0 auto;
+}
+
 .tab-links {
   position: relative;
-  margin-bottom: -2px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 5px;
   color: #2f518f;
+  border-bottom: 2px solid #eee;
+  height: 1.2em;
+  font-size: 1.2em;
 
   .tab-link {
     position: relative;
@@ -31,11 +124,13 @@ body {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     padding: 10px 20px;
+    margin-left: 1px;
+    bottom: -3px;
 
     &:hover,
     &:focus {
       padding-bottom: 11px;
-      top: -1px;
+      bottom: 0;
     }
   }
 
@@ -43,21 +138,17 @@ body {
     background: #fff;
     border: solid #eee;
     border-width: 2px 2px 0 2px;
-    padding-top: 13px;
+    padding-top: 10px;
   
     &:hover,
     &:focus {
-      padding-bottom: 10px;
-      top: 0;
+      padding-bottom: 13px;
     }
   }
 }
 
 .tab-panes {
   .tab-pane {
-    border: 2px solid #eee;
-    border-radius: 5px;
-    border-top-left-radius: 0;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
@@ -66,11 +157,6 @@ body {
   .hidden {
     display: none;
   }
-}
-
-#react-container {
-  margin: 0 auto;
-  width: 620px;
 }
 
 .statistic-title {
@@ -85,6 +171,21 @@ body {
   shape-rendering: crispEdges;
 }
 
+.top-10,
+.chart-container {
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.top-10 {
+  background: #d7a464;
+  padding: 1em;
+}
+
 .chart {
   position: relative;
 }
@@ -96,7 +197,12 @@ body {
   border-radius: 3px;
   border: 2px solid #ccc;
   padding: 5px;
+  line-height: 1em;
   font-size: 8px;
+
+  hr {
+    margin: 0 0 0.5em 0;
+  }
   
   &:after {
     content: "";
@@ -113,7 +219,7 @@ body {
   }
 
   li {
-    padding: 3px;
+    padding: 3px 5px;
     border-radius: 3px;
 
     &.active {
@@ -128,6 +234,11 @@ body {
 
   .stack-percent {
     font-style: italic;
+  }
+
+  .stack-totals {
+    border-top: 1px solid #ccc;
+    padding-bottom: 0;
   }
 }
 
@@ -146,6 +257,7 @@ body {
 }
 
 .control-legends {
+  clear: both;
   list-style: none;
   text-align: center;
   padding: 0;
@@ -162,6 +274,7 @@ body {
 .control-label {
   position: relative;
   padding: 1em;
+  font-size: 16px;
   background: #aaa;
   border-radius: 5px;
   color: #fff;
@@ -179,6 +292,35 @@ body {
   }
 }
 
+.type-controls {
+  margin-top: 10px;
+  padding-right: 20px;
+
+  .control-legends {
+    margin-top: 0;
+  }
+
+  .control-legend {
+    width: 100%;
+    margin-top: 5px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .toggle-type {
+    float: right;
+
+    .label {
+      cursor: pointer;
+      text-decoration: underline;
+      color: #2073df;
+    }
+  }
+  .select-title-label {
+    float: left;
+  }
+}
+
 .statistics-controls {
   .control-label {
     background: #ccc;
@@ -187,5 +329,81 @@ body {
   .active .control-label {
     background-color: #2f518f;
     box-shadow: 1px 1px 0px lighten(#2f518f, 15%);
+  }
+}
+
+br {
+  clear: both;
+}
+
+.chart-separator {
+  clear: both;
+  border: solid #eee;
+  border-width: 0 0 1px 0;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .left-column {
+    float: left;
+    width: 20%;
+    padding-top: 10px;
+  }
+
+  .right-column {
+    float: right;
+    width: 80%;
+    padding-top: 10px;
+  }
+
+  .control-label {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .web-tools,
+  .web-chart,
+  .distribution-topten,
+  .distribution-tools,
+  .distribution-chart {
+    display: block;
+    width: 100%;
+    float: none;
+    clear: both;
+  }
+
+  .web-tools,
+  .distribution-tools {
+    .control-legends {
+      float: left;
+    }
+
+    .control-legend {
+      width: auto;
+      float: left;
+      margin-right: 5px;
+    }
+
+    .control-label {
+      float: left;
+    }
+  }
+
+  .web-tools,
+  .distribution-tools {
+    padding-top: 0;
+  }
+
+  .web-tools,
+  .web-chart {
+    margin-top: 0;
+  }
+
+  .control-label {
+    font-size: 10px;
+  }
+
+  .tab-link {
+    font-size: 10px;
   }
 }

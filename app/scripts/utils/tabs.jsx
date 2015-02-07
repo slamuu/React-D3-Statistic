@@ -1,6 +1,6 @@
 'use strict';
 
-var React = require('react');
+var React = require('react/addons');
 
 module.exports = React.createClass({
   getDefaultProps: function() {
@@ -22,7 +22,7 @@ module.exports = React.createClass({
   		});
   	}
   },
-
+  
   setTab: function(i) {
   	this.setState({ active: i });
   },
@@ -49,8 +49,13 @@ module.exports = React.createClass({
 	  			'hidden': active != i
 	  		});
 
+        var onClick = function(event) {
+          event.preventDefault();
+          self.setTab(i);
+        };
+
 	  		panes.push(<div className={paneClasses} key={i}>{child}</div>);
-	  		links.push(<span className={linkClasses} key={i} onClick={self.setTab.bind(null, i)}>{tab}</span>);
+	  		links.push(<span className={linkClasses} key={i} onClick={onClick}>{tab}</span>);
 	  	}
   	});
 
