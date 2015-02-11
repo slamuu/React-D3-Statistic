@@ -15,7 +15,7 @@ $(function() {
 		<Tabs>
 			<Distribution tab="Data Distribution" />
 			<Archive tab="Data Archive" />
-			<Web tab="Web Statistics" />
+			<Web tab="Web Metrics" />
 	  </Tabs>,
 	  document.getElementById('react-container')
 	);

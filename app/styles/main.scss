@@ -9,6 +9,16 @@ body {
   clear: both;
 }
 
+.span-link {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #2073df;
+}
+
+.float-right {
+  float: right;
+}
+
 .chart-title {
   text-align: center;
 }
@@ -55,6 +65,7 @@ body {
 .top-10-table {
   display: none;
   width: 100%;
+  margin-top: 10px;
   font-size: 12px;
 
   th {
@@ -184,6 +195,10 @@ body {
 .top-10 {
   background: #d7a464;
   padding: 1em;
+}
+
+.top-10-title {
+  cursor: pointer;
 }
 
 .chart {
@@ -354,7 +369,8 @@ br {
     width: 80%;
     padding-top: 10px;
   }
-
+  
+  .top-10-title,
   .control-label {
     font-size: 12px;
   }
@@ -399,6 +415,7 @@ br {
     margin-top: 0;
   }
 
+  .top-10-title,
   .control-label {
     font-size: 10px;
   }

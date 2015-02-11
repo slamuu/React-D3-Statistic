@@ -212,7 +212,14 @@ module.exports = React.createClass({
         </div>
 
         <div className="right-column">
-          <h3 className="chart-title">Number of Visitors</h3>
+
+          <div className="statistics-controls">
+            <ul className="control-legends">
+              <li className="control-legend active">
+                <div className="control-label">Users</div>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <br />

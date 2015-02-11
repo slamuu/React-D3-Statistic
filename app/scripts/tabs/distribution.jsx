@@ -189,8 +189,14 @@ module.exports = React.createClass({
     }.bind(this));
   },
 
+  getDatasetUri: function(id) {
+    var basePath = Drupal.basePath;
+    return (basePath || '/') + 'dataset/' + id;
+  },
+
   getTopTen: function(type) {
-    var state = this.state,
+    var self = this,
+        state = this.state,
         activeMonth = this.getActive('month'),
         activeYear = this.getActive('year'),
         activeStatistic = this.getActive('statistic'),
@@ -222,7 +228,7 @@ module.exports = React.createClass({
         if (activeMonth == null) {
           topTenTime = activeYear;
         }
-        else {
+        else if (topTenData) {
           topTenData = _.find(topTenData.data, { month: activeMonth });
           topTenTime = monthLabels[activeMonth] + ', ' + activeYear;
         }
@@ -230,16 +236,12 @@ module.exports = React.createClass({
     }
 
     if (topTenData && (topTenData = _.find(topTenData.data, { type: type }))) {
-      topTenData = _.sortBy(topTenData.data, function(obj) {
-        return -1 * parseFloat(obj['users']);
-      }).slice(0, 10);
-
-      tableBody = _.map(topTenData, function(data, i) {
+      tableBody = _.map(topTenData.data, function(data, i) {
         return (
           <tr key={i}>
             <td className="top-10-rank">{i + 1}</td>
             <td className="top-10-name">
-              <a className="top-10-link">{data.id}</a><br />
+              <a className="top-10-link" href={self.getDatasetUri(data.id)} target="_blank">{data.id}</a><br />
               {data.name}
             </td>
             <td className="top-10-type">{type}</td>
@@ -260,9 +262,8 @@ module.exports = React.createClass({
 
       return (
         <div className="top-10" key={type}>
-          <div className="top-10-toggle" onClick={onToggleTopTen.bind(null, type)}>+</div>
-          <div className="top-10-title">
-            Top 10 Dataset for {type} by Users during {topTenTime}
+          <div className="top-10-title" onClick={onToggleTopTen.bind(null, type)}>
+            Top 10 Datasets for {type} by {activeStatistic} during {topTenTime}
           </div>
 
           <table className="top-10-table" id={type}>
@@ -431,6 +432,13 @@ module.exports = React.createClass({
               xLabel={xLabel}
               ref="chart" />
           </div>
+
+          <h3>
+            Click on bar graph to see the top 10 datasets by selected period
+            { (activeYear != 'All Years' && activeMonth != null) ?
+              (<span className="span-link float-right" onClick={this.setActive.bind(null, 'month', null)}>Show Top 10 for {activeYear}</span>)
+              : null }
+          </h3>
         </div>
           
         <div className="left-column distribution-tools">
