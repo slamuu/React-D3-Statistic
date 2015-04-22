@@ -72,24 +72,22 @@ body {
   width: 100%;
   margin-top: 10px;
   font-size: 12px;
+}
 
-  th {
-    text-align: center;
-    vertical-align: top;
-  }
+.top-10-table  th {
+  text-align: center;
+  vertical-align: top;
+}
 
-  td {
-    text-align: left;
-    vertical-align: top;
-  }
+.top-10-table  td {
+  text-align: left;
+  vertical-align: top;
+}
   
-  tbody {
-    td {
-      vertical-align: top;
-      padding: 5px;
-      border-top: 1px solid #ccc;
-    }
-  }
+.top-10-table tbody td {
+  vertical-align: top;
+  padding: 5px;
+  border-top: 1px solid #ccc;
 }
 
 .top-10-name {
@@ -131,48 +129,46 @@ body {
   border-bottom: 2px solid #eee;
   height: 1.2em;
   font-size: 1.2em;
-
-  .tab-link {
-    position: relative;
-    cursor: pointer;
-    display: inline;
-    background: #eee;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    padding: 10px 20px;
-    margin-left: 1px;
-    bottom: -3px;
-
-    &:hover,
-    &:focus {
-      padding-bottom: 11px;
-      bottom: 0;
-    }
-  }
-
-  .active {
-    background: #fff;
-    border: solid #eee;
-    border-width: 2px 2px 0 2px;
-    padding-top: 10px;
-  
-    &:hover,
-    &:focus {
-      padding-bottom: 13px;
-    }
-  }
 }
 
-.tab-panes {
-  .tab-pane {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
-  }
+.tab-links .tab-link {
+  position: relative;
+  cursor: pointer;
+  display: inline;
+  background: #eee;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 10px 20px;
+  margin-left: 1px;
+  bottom: -3px;
+}
 
-  .hidden {
-    display: none;
-  }
+.tab-links .tab-link:hover,
+.tab-links .tab-link:focus {
+  padding-bottom: 11px;
+  bottom: 0;
+}
+
+.tab-links .active {
+  background: #fff;
+  border: solid #eee;
+  border-width: 2px 2px 0 2px;
+  padding-top: 10px;
+}
+
+.tab-links .active:hover,
+.tab-links .active:focus {
+  padding-bottom: 13px;
+}
+
+.tab-panes  .tab-pane {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.tab-panes  .hidden {
+  display: none;
 }
 
 .statistic-title {
@@ -211,15 +207,15 @@ body {
   padding: 0;
   height: 0;
   padding-bottom: 50%;
+}
 
-  > svg {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+.chart  > svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .archive .chart {
@@ -235,61 +231,61 @@ body {
   padding: 5px;
   line-height: 1em;
   font-size: 8px;
+}
 
-  hr {
-    margin: 0 0 0.5em 0;
-  }
+.tooltip hr {
+  margin: 0 0 0.5em 0;
+}
   
-  &:after {
-    content: "";
-    border-top: 5px solid #ccc;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-  }
+.tooltip:after {
+  content: "";
+  border-top: 5px solid #ccc;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
 
-  li {
-    padding: 3px 5px;
-    border-radius: 3px;
+.tooltip li {
+  padding: 3px 5px;
+  border-radius: 3px;
+}
 
-    &.active {
-      background: #ccc;
-    }
-  }
+.tooltip li.active {
+  background: #ccc;
+}
 
-  .stack-label,
-  .stack-value {
-    font-weight: bold;
-  }
+.tooltip .stack-label,
+.tooltip .stack-value {
+  font-weight: bold;
+}
 
-  .stack-percent {
-    font-style: italic;
-  }
+.tooltip .stack-percent {
+  font-style: italic;
+}
 
-  .stack-totals {
-    border-top: 1px solid #ccc;
-    padding-bottom: 0;
-  }
+.tooltip .stack-totals {
+  border-top: 1px solid #ccc;
+  padding-bottom: 0;
 }
 
 .button {
   cursor: pointer;
-  
-  .label {
-    text-anchor: middle;
-    dominant-baseline: central;
-    fill: #fff;
-  }
+}
 
-  .background {
-    fill: #3492b7;
-  }
+.button .label {
+  text-anchor: middle;
+  dominant-baseline: central;
+  fill: #fff;
+}
+
+.button .background {
+  fill: #3492b7;
 }
 
 .control-legends {
@@ -317,55 +313,54 @@ body {
   text-align: center;
   text-shadow: 1px 1px 0px #555;
   box-shadow: 1px 1px 0px lighten(#ccc, 15%);
+}
 
-  &:hover,
-  &:focus {
-    top: -1px;
-  }
+.control-label:hover,
+.control-label:focus {
+  top: -1px;
+}
 
-  &:active {
-    top: 1px;
-  }
+.control-label:active {
+  top: 1px;
 }
 
 .type-controls {
   margin-top: 10px;
   padding-right: 20px;
-
-  .control-legends {
-    margin-top: 0;
-  }
-
-  .control-legend {
-    width: 100%;
-    margin-top: 5px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .toggle-type {
-    float: right;
-
-    .label {
-      cursor: pointer;
-      text-decoration: underline;
-      color: #2073df;
-    }
-  }
-  .select-title-label {
-    float: left;
-  }
 }
 
-.statistics-controls {
-  .control-label {
-    background: #ccc;
-  }
+.type-controls .control-legends {
+  margin-top: 0;
+}
 
-  .active .control-label {
-    background-color: #2f518f;
-    box-shadow: 1px 1px 0px lighten(#2f518f, 15%);
-  }
+.type-controls .control-legend {
+  width: 100%;
+  margin-top: 5px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.type-controls .toggle-type {
+  float: right;
+}
+
+.type-controls .toggle-type.label {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #2073df;
+}
+
+.type-controls .select-title-label {
+  float: left;
+}
+
+.statistics-controls .control-label {
+  background: #ccc;
+}
+
+.statistics-controls .active .control-label {
+  background-color: #2f518f;
+  box-shadow: 1px 1px 0px lighten(#2f518f, 15%);
 }
 
 br {
@@ -409,21 +404,21 @@ br {
     clear: both;
   }
 
-  .web-tools,
-  .distribution-tools {
-    .control-legends {
-      float: left;
-    }
+  .web-tools .control-legends,
+  .distribution-tools .control-legends {
+    float: left;
+  }
 
-    .control-legend {
-      width: auto;
-      float: left;
-      margin-right: 5px;
-    }
+  .web-tools .control-legend,
+  .distribution-tools .control-legend {
+    width: auto;
+    float: left;
+    margin-right: 5px;
+  }
 
-    .control-label {
-      float: left;
-    }
+  .web-tools .control-label,
+  .distribution-tools .control-label {
+    float: left;
   }
 
   .web-tools,

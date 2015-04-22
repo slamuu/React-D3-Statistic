@@ -8,18 +8,7 @@ var transform = require('vinyl-transform');
 
 var $ = require('gulp-load-plugins')();
 
-var dist = './../app/';
-
-gulp.task('styles', function () {
-  return gulp.src('app/styles/**/*.scss')
-    .pipe($.plumber())
-    .pipe($.rubySass({
-      style: 'expanded',
-      precision: 10
-    }))
-    .pipe($.autoprefixer({browsers: ['last 1 version']}))
-    .pipe(gulp.dest('.tmp/styles'));
-});
+var dist = './dist/';
 
 gulp.task('scripts', function () {
   var bundler = transform(function(filename) {
@@ -52,7 +41,7 @@ gulp.task('jshint', function () {
     .pipe($.jshint.reporter('fail'));
 });
 
-gulp.task('html', ['styles', 'scripts'], function () {
+gulp.task('html', ['scripts'], function () {
   var lazypipe = require('lazypipe');
   var cssChannel = lazypipe()
     .pipe($.csso)
@@ -97,7 +86,7 @@ gulp.task('extras', function () {
 
 gulp.task('clean', require('del').bind(null, ['.tmp', dist]));
 
-gulp.task('connect', ['styles', 'scripts'], function () {
+gulp.task('connect', ['scripts'], function () {
   var serveStatic = require('serve-static');
   var serveIndex = require('serve-index');
   var app = require('connect')()
@@ -144,7 +133,6 @@ gulp.task('watch', ['connect'], function () {
     'app/images/**/*'
   ]).on('change', $.livereload.changed);
   
-  gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/scripts/**/*.jsx', ['scripts']);
   gulp.watch('bower.json', ['wiredep']);
 });
