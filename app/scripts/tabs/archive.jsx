@@ -215,6 +215,13 @@ module.exports = React.createClass({
             xLabel={xLabel}
             ref="chart" />
         </div>
+        
+        <div className="disclaimer">
+          <p>
+            Data Archive metrics shown here do not reflect the entire data holdings at PO.DAAC.
+            It represents the holdings in our Data Management and Archive System (DMAS) only.
+          </p>
+        </div>
       </div>
     );
   }

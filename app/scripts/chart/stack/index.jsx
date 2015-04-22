@@ -134,8 +134,8 @@ module.exports = React.createClass({
         padding = props.padding,
         totals = state.totals,
         elem = $(this.getDOMNode()),
-        wscale = elem.width() / props.width,
-        hscale = elem.height() / props.height;
+        wscale = elem.outerWidth() / props.width,
+        hscale = elem.outerHeight() / props.height;
 
     if (tooltip) {
       var yScale = this.getYScale(),
@@ -150,7 +150,7 @@ module.exports = React.createClass({
           bar: bar,
         }
       });
-      
+      console.log(bar.x, xScale.rangeBand(), hscale);
       tooltip.onShow();
       tooltip.setPosition({
         y: bar.y * wscale,

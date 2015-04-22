@@ -15,7 +15,7 @@ module.exports = React.createClass({
     };
   },
 
-  componentWillReceiveProps: function(nextProps) {
+  componentDidUpdate: function() {
     var elem = $(this.getDOMNode()),
         height = elem.outerHeight(),
         width = elem.outerWidth();
